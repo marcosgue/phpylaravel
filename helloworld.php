@@ -1,7 +1,6 @@
 <?php
 
-    ini_set('display_errors', true);
-    error_reporting(E_ALL);
+    require 'config.php';
 
     $confidencial = "wow such private very confidential";
     $language = "PHP";
