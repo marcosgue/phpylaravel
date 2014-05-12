@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Mejorando.la</title>
+    <title><?= $titulo ?></title>
 </head>
 <body>
     <h1>Mejorando.la</h1>
     Aprendiendo <strong><?= $language ?></strong>
+
+    <p><a href="contactos.php">Contactanos</a> </p>
 </body>
 </html>
-
-<?= $confidencial ?>
