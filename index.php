@@ -9,6 +9,7 @@ require 'helpers.php';
 
 //Library
 require 'library/Request.php';
+require 'library/Inflector.php';
 
 // Llamar al controlador indicado
 
@@ -22,4 +23,4 @@ else
 }
 
 $request = new Request($url);
-var_dump($request->getUrl());
+$request->execute();

@@ -7,9 +7,9 @@ class ContactosController {
 
     }
 
-    public function cityAction($city)
+    public function ciudadAction($ciudad)
     {
-
+        exit('contactos ciudad'. $ciudad);
     }
 
 }
