@@ -1,12 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title><?= $titulo ?></title>
-</head>
-<body>
-    <h1>Mejorando.la</h1>
-    Aprendiendo <strong><?= $language ?></strong>
+
+    <h4><?= $titulo; ?></h4>
 
     <p><a href="contactos.php">Contactanos</a> </p>
-</body>
-</html>

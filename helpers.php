@@ -1,12 +1,5 @@
 <?php
 
-// Declarando una función
-function view($template, $vars = array())
-{
-    extract($vars);
-
-    require "views/$template.tpl.php";
-}
 
 function controller($name)
 {
