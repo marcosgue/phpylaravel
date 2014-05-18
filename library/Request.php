@@ -22,9 +22,7 @@ class Request {
 
         $this->resolveController($segments);
         $this->resolveAction($segments);
-        $this-> resolveParams($segments);
-
-
+        $this->resolveParams($segments);
     }
 
     public function resolveController(&$segments)
@@ -80,7 +78,6 @@ class Request {
     public function getActionMethodName()
     {
         return Inflector::lowerCamel($this->getAction()) . 'Action';
-
     }
 
     public function getParams()
@@ -90,10 +87,10 @@ class Request {
 
     public function execute()
     {
-        $controllerClassName    = $this->getControllerClassName();
-        $controllerFileName     = $this->getControllerFileName();
-        $actionMethodName       = $this->getActionMethodName();
-        $params                 = $this->getParams();
+        $controllerClassName = $this->getControllerClassName();
+        $controllerFileName  = $this->getControllerFileName();
+        $actionMethodName    = $this->getActionMethodName();
+        $params              = $this->getParams();
 
         if ( ! file_exists($controllerFileName))
         {
@@ -111,7 +108,6 @@ class Request {
 
     public function executeResponse($response)
     {
-
         if ($response instanceof Response)
         {
             $response->execute();
@@ -120,14 +116,21 @@ class Request {
         {
             echo $response;
         }
-        elseif (is_array($response))
+        elseif(is_array($response))
         {
             echo json_encode($response);
         }
         else
         {
-            exit ('Invalid response');
+            exit('Respuesta no valida');
         }
     }
 
 }
+
+
+
+
+
+
+

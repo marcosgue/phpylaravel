@@ -11,11 +11,17 @@ class View extends Response {
         $this->vars = $vars;
     }
 
+    /**
+     * @return mixed
+     */
     public function getTemplate()
     {
         return $this->template;
     }
 
+    /**
+     * @return array
+     */
     public function getVars()
     {
         return $this->vars;
@@ -27,7 +33,7 @@ class View extends Response {
         $vars = $this->getVars();
 
         call_user_func(function () use ($template, $vars) {
-            extract ($vars);
+            extract($vars);
 
             ob_start();
 
@@ -36,9 +42,7 @@ class View extends Response {
             $tpl_content = ob_get_clean();
 
             require "views/layout.tpl.php";
-
         });
-
     }
 
 }

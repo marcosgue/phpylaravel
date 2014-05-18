@@ -1,4 +1,4 @@
 
-    <h4><?= $titulo; ?></h4>
+<h4><?= $titulo ?></h4>
 
-    <p><a href="contactos.php">Contactanos</a> </p>
+<p><a href="contactos">Contactanos</a></p>

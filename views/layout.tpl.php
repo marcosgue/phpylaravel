@@ -4,7 +4,7 @@
     <title>MejorandoPHP</title>
 </head>
 <body>
-<h1>Mejorando.la</h1>
+<h1>MejorandoPHP</h1>
 
 <?= $tpl_content; ?>
 

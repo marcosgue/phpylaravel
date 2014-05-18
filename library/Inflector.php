@@ -6,9 +6,8 @@ class Inflector {
     {
         $segments = explode('-', $value);
 
-        array_walk($segments, function (&$item)
-        {
-           $item = ucfirst($item);
+        array_walk($segments, function (&$item) {
+            $item = ucfirst($item);
         });
 
         return implode('', $segments);

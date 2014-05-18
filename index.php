@@ -2,7 +2,7 @@
 
 /*
  * El frontend controller se encarga de
- * configurar nuestra aplicación
+ * configurar nuestra aplicacion
  */
 require 'config.php';
 require 'helpers.php';
@@ -13,7 +13,8 @@ require 'library/Inflector.php';
 require 'library/Response.php';
 require 'library/View.php';
 
-// Llamar al controlador indicado
+
+//Llamar al controlador indicado
 
 if (empty($_GET['url']))
 {
